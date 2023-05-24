@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS10</title>
+    <style>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(233, 232, 232);
+        }
+        .header{
+            background-color: brown;
+            display: inline-flex;
+            width: 100%;
+        }
+        .left-header{
+            float: left;
+            padding-left: 50px;
+            width: 50%;
+        }
+        .right-header{
+            float: right;
+        }
+        .right-header table{
+            margin: 5px;
+            padding: 5px;
+        }
+        .right-header td{
+            margin-right: 5px;
+        }
+        .right-header label{
+            font-size: 15px;
+            color: white;
+        }
+        a{
+            text-decoration: none;
+        }
+        .content{
+            background-color: rgb(233, 232, 232);
+            display: inline-flex;
+            width: 100%;
+        }
+        .left-content{
+            width: 50%;
+            float: left;
+            margin-left: 60px;
+        }
+        .right-content{
+            width: 50%;
+            float: right;
+            padding: 0;
+            margin-left: 40%;
+        }
+        .left-content p{
+            font-size: 30px;
+            font-weight: bold;
+            color: darkred;
+        }
+        .input-single{
+            width: 355px;
+        }
+        .right-content input{
+            border: 1px solid black;
+            border-radius: 5px;
+            height: 30px;
+            margin-bottom: 5px;
+            padding: 5px;
+        }
+        .right-content label{
+            color: brown;
+            margin-top: 10px;
+        }
+        .right-content button{
+            color: white;
+            padding: 5px;
+            border-radius: 10px;
+            font-size: large;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="left-header">
+            <h1 style="color: azure; font-size: 45px;">Facebook</h1>
+        </div>
+
+        <div class="right-header">
+            <form>
+                <table>
+                    <tr>
+                        <td><label>Email/Username</label></td>
+                        <td><label>Password</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="email" placeholder="email"></td>
+                        <td><input type="password" placeholder="password"></td>
+                        <td><button style="background-color: white;">login</button></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"><label>Keep me logged in</label></td>
+                        <td><a href="#">Forgotten my password</a></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="left-content">
+            <p>Facebook is useless without friends. Make some friends</p>
+            <img src="http://cogdogblog.com/wp-content/uploads/2010/05/facebook-shares.jpg" alt="#">
+        </div>
+        <div class="right-content">
+            <p style="font-size: 40px; color: blue;">Create an account. <br><span style="font-size: 20px; color: blue;">It was always free and always will be</span></p>
+
+            <div>
+                <form>
+                    <div style="width: 360px;">
+                        <input type="text" placeholder="firstname">
+                        <input type="text" placeholder="lastname">
+                    </div>
+                    <input type="email" name="" id="" placeholder="email" class="input-single">
+                    <br>
+                    <input type="email" name="" id="" placeholder="re-enter email" class="input-single">
+                    <br>
+                    <input type="password" placeholder="password" class="input-single">
+                    <br>
+                    <input type="date" name="" id="">
+                    <br>
+                    <div style="display: inline-flex;">
+                        <input type="radio" name="gender" id=""><label>Male</label>
+                    </div>
+                    <div style="display: inline-flex;">
+                        <input type="radio" name="gender" id=""><label>Female</label>
+                    </div>
+                    <p style="font-size: small; color: blue;">By clicking create an account, you agree to our terms</p>
+                    <button style="background-color: green;">Signup</button>
+                    <hr>
+                    <p style="font-size: small; color: blue;">Create a page for you...</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

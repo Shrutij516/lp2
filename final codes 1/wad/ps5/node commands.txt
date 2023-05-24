@@ -1,0 +1,9 @@
+npm --version
+npm init
+yes
+npm i express mongoose nodemon
+cd foldername
+run file: node filename.js
+
+
+put - "type":"module", below main in package.json
